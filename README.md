@@ -11,7 +11,7 @@ Docker로 실행한 웹 환경에서 HWP/HWPX 문서를 열고 편집 흐름을 
 - HWP/HWPX 파일 입력 검증과 텍스트 추출 보조 로직 작성
 - Docker Compose 기반 로컬 실행 구조 작성
 - 업로드 문서가 서버에 남지 않도록 점검하는 스크립트 작성
-- 공개 저장소에서는 별도 라이선스가 필요한 HWP 엔진, wasm, 폰트, 내부 배포 자료 제거
+- 별도 라이선스가 필요한 HWP 엔진, wasm, 폰트, 내부 배포 자료 제외
 
 ## 폴더별 설명
 
@@ -68,6 +68,6 @@ node scripts/no-content-at-rest.mjs
 
 ## 공개 범위
 
-회사 데이터, 런타임 JSON, DB, CSV, 배포 영수증, 내부 지시문, 엔진 asset, 빌드 결과물, `node_modules`, `.env` 파일은 포함하지 않습니다.
+회사 데이터, 런타임 JSON, DB, CSV, 배포 영수증, 내부 지시문, 엔진 asset, 빌드 결과물, `node_modules`, `.env` 파일은 넣지 않았습니다.
 
-공동 편집은 현재 범위에 포함하지 않았고, 설치 없는 편집 UI와 local-only/no-share 흐름을 제공합니다.
+공동 편집은 현재 범위에 없습니다. 설치 없는 편집 UI와 local-only/no-share 흐름만 포함했습니다.
