@@ -70,4 +70,4 @@ node scripts/no-content-at-rest.mjs
 
 회사 데이터, 런타임 JSON, DB, CSV, 배포 영수증, 내부 지시문, 엔진 asset, 빌드 결과물, `node_modules`, `.env` 파일은 포함하지 않습니다.
 
-공동 편집은 현재 범위에 포함하지 않았고, 설치 없는 편집 UI와 local-only/no-share 흐름을 중심으로 구성했습니다.
+공동 편집은 현재 범위에 포함하지 않았고, 설치 없는 편집 UI와 local-only/no-share 흐름을 제공합니다.
