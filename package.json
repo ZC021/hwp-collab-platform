@@ -1,0 +1,36 @@
+{
+  "name": "hwp-collab-platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "check": "node --check server/index.js && node --check server/hwp-text.js && node --check scripts/stress-test.mjs && node --check scripts/no-content-at-rest.mjs && node --check scripts/purge-content-at-rest.mjs && node --check vite.config.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "stress": "node scripts/stress-test.mjs",
+    "audit:no-content": "node scripts/no-content-at-rest.mjs",
+    "purge:content": "node scripts/purge-content-at-rest.mjs --apply"
+  },
+  "dependencies": {
+    "@rhwp/core": "^0.7.13",
+    "@rhwp/editor": "^0.7.13",
+    "cfb": "^1.2.2",
+    "express": "^5.2.1",
+    "fast-xml-parser": "^5.8.0",
+    "hwp.js": "^0.0.3",
+    "jszip": "^3.10.1",
+    "multer": "2.2.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "ws": "8.21.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.3",
+    "jsdom": "^29.1.1",
+    "vite": "^8.1.0",
+    "vitest": "^3.2.6"
+  }
+}
